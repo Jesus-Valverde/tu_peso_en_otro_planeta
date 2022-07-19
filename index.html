@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Tu peso en otro planeta</title>
+</head>
+<body>
+    <div>
+        <h1>Tu peso en otro planeta</h1>
+        <p>En <b class="marte">marte</b> o <b class="jupiter">jupiter</b> pesas distinto que en la tierra</p>
+        <script>
+            var usuario = prompt("Cual es tu peso?");
+            var peso = parseInt(usuario);
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            var peso_final;
+            peso_final = peso * g_marte / g_tierra;
+            peso_final = parseInt(peso_final);
+            document.write("Tu peso en <b>marte</b> es <strong>" + peso_final + "</strong> kilos");
+        </script>
+        <p><img src="images/astronaut.png" alt="astronauta" class="astronaut"></p>
+
+    </div>
+    
+    
+</body>
+</html>
